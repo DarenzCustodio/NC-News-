@@ -23,7 +23,6 @@ export default function ArticleInfo(){
     else{
     return (
         <>
-        <p>im in article info!</p>
         <p>article_id: {article.article.article_id}</p>
         <img src={article.article.article_img_url}></img>
         <p>author: {article.article.author}</p>

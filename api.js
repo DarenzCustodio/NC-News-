@@ -1,17 +1,18 @@
 import axios from "axios";
 
+const instance = axios.create({
+  baseURL: "https://news-data-app.onrender.com/api",
+  timeout: 1000,
+});
+
 export const getArticles = () => {
-  return axios
-    .get(`https://news-data-app.onrender.com/api/articles`)
-    .then((response) => {
-      return response;
-    });
+  return instance.get(`/articles`).then((response) => {
+    return response;
+  });
 };
 
 export const getArticleById = ({ article_id }) => {
-  return axios
-    .get(`https://news-data-app.onrender.com/api/articles/${article_id}`)
-    .then((response) => {
-      return response;
-    });
+  return instance.get(`/articles/${article_id}`).then((response) => {
+    return response;
+  });
 };
