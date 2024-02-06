@@ -1,21 +1,24 @@
+import {Link} from 'react-router-dom'
+import '../App.css'
+import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/ArticleCard.css'
+
 export default function ArticleCard({articles}){
 
     return (
          <div>
             {articles.article && articles.article.map((article, index)=>{
                 return (
-                    <div key={index}>
-                        <h2>article {index + 1}</h2>
-                        <p>author: {article.author}</p>
-                        <p>title: {article.title}</p>
-                        <p>article_id: {article.article_id}</p>
-                        <p>topic: {article.topic}</p>
-                        <p>created_at: {article.created_at}</p>
-                        <p>votes: {article.votes}</p>
-                        <img src={article.article_img_url}></img>
+                    <div className="articleContainer" key={article.article_id}>
+                        <div className='articleTitle'>
+                            <h2>article {index + 1}</h2>
+                        </div>
+                        <div className="viewLink">                          
+                            <Link className="viewComponent" to={`/articles/${article.article_id}`}>View</Link>
+                        </div>
                     </div>
                 )
             })}
         </div>
     )
 }
+
