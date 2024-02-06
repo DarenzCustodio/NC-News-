@@ -19,7 +19,7 @@ export default function ArticleInfo(){
      } ,[])
     
 
-    if(loading) return <p>loading...</p>
+    if(loading) return <p>page loading...</p>
     else{
     return (
         <>
