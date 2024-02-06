@@ -1,27 +1,38 @@
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { getArticleById } from '../../api';
 
-export default function ArticleInfo({articles}){
-
+export default function ArticleInfo(){
+    
     const {article_id} = useParams()
+    const [article, setArticle]= useState()
+    const [loading, setLoading]= useState(true)
 
-    let article;
+    useEffect(() => {
+        getArticleById({article_id})
+        .then((response)=>{
+            setArticle(response.data)
+            setLoading(false)
+        }).catch((err)=>{
+            console.log(err)
+        })
+     } ,[])
+    
 
-    articles.article.forEach((element)=>{
-        if(element.article_id === Number(article_id)){
-            article = element;
-        }
-    })
-
+    if(loading) return <p>loading...</p>
+    else{
     return (
         <>
-        <p>article_id: {article_id}</p>
-        <img src={article.article_img_url}></img>
-        <p>author: {article.author}</p>
-        <p>comment count: {article.comment_count}</p>
-        <p>created_at: {article.created_at}</p>
-        <p>title: {article.title}</p>
-        <p>topic: {article.topic}</p>
-        <p>votes: {article.votes}</p>
+        <p>im in article info!</p>
+        <p>article_id: {article.article.article_id}</p>
+        <img src={article.article.article_img_url}></img>
+        <p>author: {article.article.author}</p>
+        <p>comment count: {article.article.comment_count}</p>
+        <p>created_at: {article.article.created_at}</p>
+        <p>title: {article.article.title}</p>
+        <p>topic: {article.article.topic}</p>
+        <p>votes: {article.article.votes}</p>
         </>
     )
+}
 }
