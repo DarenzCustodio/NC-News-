@@ -1,0 +1,22 @@
+.articleContainer{
+    border: white;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.articleTitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.viewLink{
+    padding-left: 20px;
+}
+
+.viewComponent{
+    border: white;
+    border-style: solid;
+    padding: 10px;
+}

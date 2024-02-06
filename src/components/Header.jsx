@@ -1,3 +1,5 @@
+import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/Header.css'
+
 export default function Header(){
     return (
         <div>

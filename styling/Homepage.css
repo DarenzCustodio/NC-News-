@@ -1,0 +1,9 @@
+.welcome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.HomepageLink{
+    border-style: solid;
+    border-color: white;
+    padding: 8px
+}
