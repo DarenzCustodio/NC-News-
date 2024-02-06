@@ -6,7 +6,7 @@ export default function ArticleCard({articles}){
 
     return (
          <div>
-            {articles.article && articles.article.map((article, index)=>{
+            {articles.article.map((article, index)=>{
                 return (
                     <div className="articleContainer" key={article.article_id}>
                         <div className='articleTitle'>
@@ -21,4 +21,3 @@ export default function ArticleCard({articles}){
         </div>
     )
 }
-
