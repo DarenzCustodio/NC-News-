@@ -16,3 +16,9 @@ export const getArticleById = ({ article_id }) => {
     return response;
   });
 };
+
+export const getArticleComments = ({ article_id }) => {
+  return instance.get(`/articles/${article_id}/comments`).then((response) => {
+    return response;
+  });
+};
