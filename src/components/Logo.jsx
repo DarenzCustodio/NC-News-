@@ -1,5 +1,5 @@
 import React from 'react'
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/Logo.css'
+import '../../styling/Logo.css'
 
 const Logo = () => {
     return (
