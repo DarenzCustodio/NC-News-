@@ -1,4 +1,4 @@
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/Header.css'
+import '../../styling/Header.css'
 
 export default function Header(){
     return (
