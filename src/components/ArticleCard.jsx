@@ -8,7 +8,8 @@ export default function ArticleCard({articles}){
          <div>
             {articles.article.map((article, index)=>{
                 return (
-                    <div className="articleContainer" key={article.article_id}>
+                    <div className="articleContainer" 
+                    key={article.article_id}>
                         <div className='articleTitle'>
                             <h2>article {index + 1}</h2>
                         </div>
