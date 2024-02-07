@@ -7,7 +7,6 @@ import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/Ho
 export default function Homepage(){
     return (
             <div>
-                <Header />
                 <h2 className="welcome">Welcome to NC-News!</h2>    
                 <Logo />
                 <Link className="HomepageLink" to="/articles">View all articles</Link>
