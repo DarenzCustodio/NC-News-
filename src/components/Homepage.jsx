@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Header from './Header'
 import '../../styling/List.css'
 import Logo from './Logo'
 import '../../styling/Homepage.css'
