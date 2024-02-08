@@ -1,32 +1,33 @@
-import { patchVotes } from "../../api";
+import { patchVotes, patchVotesDecrement } from "../../api";
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import '../../styling/Vote.css'
 
-export default function UpdateVotes(){
+export default function UpdateVotes({setVotesCount, votesCount}){
     const {article_id} = useParams()
-    const [votesCount, setVotesCount] = useState(0)
     const [err, setErr] = useState(null)
 
      const handleVotesClick = () =>{
-        setVotesCount(votesCount+1)
-        patchVotes({article_id}).then(()=>{
+        setVotesCount(votesCount + 1)
+        patchVotes(article_id).then(()=>{
             setErr(null)
         }).catch((err)=>{
-            setError(err)
+            setErr(err)
         })
      }
 
      const handleDeleteVotesClick = () => {
         setVotesCount(votesCount - 1)
-        patchVotes({article_id}).then(()=>{
+        patchVotesDecrement(article_id).then(()=>{
             setErr(null)
         })
         .catch((err)=>{
-            setError(err)
+            setErr(err)
+
         })
      }
 
+     if(err){return <p>Vote unsuccessful... Please try again!</p>}
      return (
         <>
             <p>votes: {votesCount}</p>
