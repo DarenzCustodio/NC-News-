@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import '../App.css'
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/ArticleCard.css'
+import '../../styling/ArticleCard.css'
 
 export default function ArticleCard({articles}){
 

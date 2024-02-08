@@ -1,6 +1,6 @@
 import ArticleCard from "./ArticleCard";
 import { useState, useEffect } from "react"
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/ArticleList.css'
+import '../../styling/ArticleList.css'
 import { getArticles } from "../../api"
 
 export default function ArticleList(){

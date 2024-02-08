@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getArticleById } from '../../api';
+import UpdateVotes from './UpdateVotes';
 
 export default function ArticleManager(){
     
     const {article_id} = useParams()
     const [article, setArticle]= useState()
     const [loading, setLoading]= useState(true)
-    
 
     useEffect(() => {
         getArticleById({article_id})
@@ -31,7 +31,7 @@ export default function ArticleManager(){
         <p>created_at: {String(actualDate)}</p>
         <p>title: {article.article.title}</p>
         <p>topic: {article.article.topic}</p>
-        <p>votes: {article.article.votes}</p>
+        <UpdateVotes/>
         </>
         )
     }

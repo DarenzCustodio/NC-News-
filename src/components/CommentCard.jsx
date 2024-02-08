@@ -1,4 +1,4 @@
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/CommentCard.css'
+import '../../styling/CommentCard.css'
 
 export default function CommentCard({comments}){
 

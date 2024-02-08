@@ -1,4 +1,4 @@
-import '/Users/darenz/northcoders/Front-end-portfolio-project/NC-News/styling/NavBar.css'
+import '../../styling/NavBar.css'
 import {Link} from 'react-router-dom'
 
 export default function NavBar(){
