@@ -8,11 +8,13 @@ export default function ArticleManager(){
     const {article_id} = useParams()
     const [article, setArticle]= useState()
     const [loading, setLoading]= useState(true)
-
+    const [votesCount, setVotesCount]= useState()
+    
     useEffect(() => {
         getArticleById({article_id})
         .then((response)=>{
             setArticle(response.data)
+            setVotesCount(response.data.article.votes)
             setLoading(false)
         }).catch((err)=>{
             console.log(err)
@@ -31,7 +33,7 @@ export default function ArticleManager(){
         <p>created_at: {String(actualDate)}</p>
         <p>title: {article.article.title}</p>
         <p>topic: {article.article.topic}</p>
-        <UpdateVotes/>
+        <UpdateVotes votesCount= {votesCount} setVotesCount={setVotesCount}/>
         </>
         )
     }

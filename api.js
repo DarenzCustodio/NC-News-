@@ -23,10 +23,20 @@ export const getArticleComments = ({ article_id }) => {
   });
 };
 
-export const patchVotes = ({ article_id }) => {
+export const patchVotes = (article_id) => {
   return instance
     .patch(`/articles/${article_id}`, {
       inc_votes: 1,
+    })
+    .then((response) => {
+      return response;
+    });
+};
+
+export const patchVotesDecrement = (article_id) => {
+  return instance
+    .patch(`/articles/${article_id}`, {
+      inc_votes: -1,
     })
     .then((response) => {
       return response;
