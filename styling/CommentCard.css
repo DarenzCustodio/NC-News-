@@ -1,4 +1,6 @@
 .commentCard{
-    border:white;
+    border: lightgrey;
     border-style: solid;
-   }
+    margin-top: 2%;
+    margin-bottom: 5%;
+}

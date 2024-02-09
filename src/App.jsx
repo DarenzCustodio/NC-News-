@@ -5,12 +5,14 @@ import ArticleManager from './components/ArticleManager';
 import CommentManager from './components/CommentManager';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import UserManager from './components/UserManager';
+import { UserProvider } from './components/UserProvider';
 
 
 function App() {
   
   return (
-    <>
+    <UserProvider >
     <Header />
     <NavBar />
       <Routes>
@@ -21,8 +23,9 @@ function App() {
         {<>
           <ArticleManager /> <CommentManager /> 
         </>} />
+        <Route path="/users" element={<UserManager /> } />
       </Routes>
-    </>
+    </UserProvider>
    )
 }
 
