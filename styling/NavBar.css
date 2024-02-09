@@ -21,3 +21,11 @@
     padding: 14px 20px;
     text-decoration: none;
 }
+
+.loggedInUser{
+    display: block;
+    color: seagreen;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}

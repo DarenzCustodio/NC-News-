@@ -1,14 +1,13 @@
 import '../../styling/CommentCard.css'
 
-export default function CommentCard({comments}){
+export default function CommentCard({comments, setComments}){
 
     return (
-
         <div>
         {comments.comments.map((comments, index)=>{
         const actualDate = new Date(`${comments.created_at}`)
-            return (
-                <div key={index}>
+        return (
+            <div key={index}>
                     <div className="commentCard">
                         <h2>comments {index + 1}</h2>
                         <p>{comments.body}</p>
@@ -16,12 +15,9 @@ export default function CommentCard({comments}){
                         <p>created at: {String(actualDate)}</p>
                         <p>votes: {comments.votes}</p>
                     </div>
-                    <div>                          
-                        
-                    </div>
                 </div>
             )
         })}
-    </div>
-        )
-    }
+        </div>
+    )
+}

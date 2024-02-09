@@ -42,3 +42,17 @@ export const patchVotesDecrement = (article_id) => {
       return response;
     });
 };
+
+export const getUsers = () => {
+  return instance.get(`/users`).then((response) => {
+    return response;
+  });
+};
+
+export const postComment = (article_id, { author, body }) => {
+  return instance
+    .post(`/articles/${article_id}/comments`, { username: author, body })
+    .then((response) => {
+      return response;
+    });
+};

@@ -1,0 +1,6 @@
+.articleContainer{
+    display: inline-block;
+    border: yellow;
+    border-style: solid;
+    margin-top: 3%;
+}

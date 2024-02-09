@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getArticleById } from '../../api';
 import UpdateVotes from './UpdateVotes';
+import '../../styling/ArticleManager.css'
 
 export default function ArticleManager(){
     
@@ -26,14 +27,16 @@ export default function ArticleManager(){
         const actualDate = new Date(`${article.article.created_at}`)
     return (
         <>
+        <div className='articleContainer'>
         <p>article_id: {article.article.article_id}</p>
-        <img src={article.article.article_img_url}></img>
+        <img src={article.article.article_img_url} alt="image of article"></img>
         <p>author: {article.article.author}</p>
         <p>comment count: {article.article.comment_count}</p>
         <p>created_at: {String(actualDate)}</p>
         <p>title: {article.article.title}</p>
         <p>topic: {article.article.topic}</p>
         <UpdateVotes votesCount= {votesCount} setVotesCount={setVotesCount}/>
+        </div>
         </>
         )
     }

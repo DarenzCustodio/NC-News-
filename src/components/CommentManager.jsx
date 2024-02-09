@@ -25,7 +25,7 @@ export default function CommentManager(){
         return(
             <>
                 <div>
-                    <CommentList comments={comments}/>
+                    <CommentList setComments={setComments} comments={comments}/>
                 </div>
             </>
         )
