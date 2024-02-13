@@ -3,7 +3,7 @@ import '../../styling/Header.css'
 export default function Header(){
     return (
             <header>
-                <h1>NC-News 🗞️</h1>
+                <h1>Northcoders-News 🗞️</h1>
             </header>
     )
 }

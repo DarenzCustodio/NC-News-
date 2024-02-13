@@ -9,22 +9,25 @@ export default function PostComment({comments, setComments}){
 
     const {article_id} = useParams()
     const [userComment, setUserComment] = useState("") 
+    const [isSuccessful, setIsScucessful] = useState(false)
 
     const handleSubmit = () =>{
-        setComments({author:"tickle122", body:userComment})
-
+        
         const date = new Date()
         const comment = {author: 'tickle122', body: userComment, 
         votes:0, created_at: date.toISOString()}
+        
         postComment(article_id, comment).then((response)=>{
+            setIsScucessful(true)
             setComments((currentComments)=>{
-            return {comments: [...currentComments.comments, response.data.comment]} 
+                return {comments: [...currentComments.comments, response.data.comment]} 
             })
         }).catch((err)=>{
             console.log(err)
         })
     }
-
+    if(isSuccessful) return <p>Comment successfully posted!</p>
+    else{
     return (
         <>
         <div>
@@ -44,4 +47,5 @@ export default function PostComment({comments, setComments}){
         </div>
         </>
     )
+    }
 }

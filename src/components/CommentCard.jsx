@@ -1,7 +1,6 @@
 import '../../styling/CommentCard.css'
 
 export default function CommentCard({comments, setComments}){
-
     return (
         <div>
         {comments.comments.map((comments, index)=>{
