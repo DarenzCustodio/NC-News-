@@ -1,3 +1,6 @@
-header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.header{
+    border-style: outset;
+    align-items: left;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

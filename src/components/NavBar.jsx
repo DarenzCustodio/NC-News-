@@ -7,15 +7,15 @@ export default function NavBar() {
     const { loggedInUser, setLoggedInUser } = useContext(UserContext)
 
     return (
-        <nav className='navBarContainer'>
-            <ul className='navUnorderedList'>
-                <li className='navList'>
+        <nav className='topNav'>
+            <ul>
+                <li>
                     <Link to="/">Home</Link>
                 </li>
-                <li className='navList'>
+                <li>
                     <Link to="/articles">articles</Link>
                 </li>
-                <li className='navList'>
+                <li>
                     <Link to="/users">users</Link>
                 </li>
                 <li className='loggedInUser'>logged in: {loggedInUser.username}</li>

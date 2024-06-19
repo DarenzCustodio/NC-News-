@@ -1,36 +1,32 @@
-.navBarContainer{
-    background-color: lightgray;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+.topNav{
+    overflow: hidden;
 }
 
-.navUnorderedList{
-    list-style: none;
-    display: flex;
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: white;
+    height: 50px;
 }
 
-.navList{
+li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+    padding: 10px;
     text-decoration: none;
-}
-
-.navList:hover{
+  }
+  
+  li a {
+    text-decoration: none;
+  } 
+  
+  li a:hover {
     background-color: lightskyblue;
-}
+  }
 
-.loggedInUser{
-    display: block;
-    color: seagreen;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
+  .loggedInUser{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
