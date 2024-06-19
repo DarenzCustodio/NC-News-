@@ -1,12 +1,12 @@
 import { useContext } from 'react'
 import '../../styling/NavBar.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { UserContext } from './UserProvider'
 
-export default function NavBar(){
-    const {loggedInUser, setLoggedInUser} = useContext(UserContext)
-    
-    return(
+export default function NavBar() {
+    const { loggedInUser, setLoggedInUser } = useContext(UserContext)
+
+    return (
         <nav className='navBarContainer'>
             <ul className='navUnorderedList'>
                 <li className='navList'>
