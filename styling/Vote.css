@@ -29,18 +29,19 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+  margin-top: 10px;
 }
 
 .voteButton:active {
-  border-bottom-color: #a2a6ac;
+  border-bottom-color: #90EE90;
 }
 
 .voteButton:active:hover {
-  border-bottom-color: #a2a6ac;
+  border-bottom-color: 	#90EE90;
 }
 
 .voteButton:hover {
-  border-color: #a2a6ac #979aa1 #82858a;
+  border-color: 	#90EE90 	#90EE90 	#90EE90;
 }
 
 .voteButton:focus {
@@ -84,15 +85,15 @@
 }
 
 .deleteButton:active {
-  border-bottom-color: #a2a6ac;
+  border-bottom-color: 	#ff0000;
 }
 
 .deleteButton:active:hover {
-  border-bottom-color: #a2a6ac;
+  border-bottom-color: 	#ff0000;
 }
 
 .deleteButton:hover {
-  border-color: #a2a6ac #979aa1 #82858a;
+  border-color: 	#ff0000 	#ff0000	#ff0000;
 }
 
 .deleteButton:focus {

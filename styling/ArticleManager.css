@@ -1,3 +1,16 @@
 .articleContainer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+h3{
+    padding-top: 10px;
+}
+
+.votesContainer{
+    background-color: darkgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }

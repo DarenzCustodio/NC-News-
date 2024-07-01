@@ -1,7 +1,20 @@
 .postButtonContainer{
+    display: flex;
+    margin-top: 10px;
     padding: 2%;
+    background-color: darkgray;
+    border-radius: 10px;
+  }
+
+  .form{
+    display: flex;
   }
   
+  .comment-button{
+    display: flex;
+    padding-left: 10px;
+  }
+
   .postButton {
     background-image: linear-gradient(#f7f8fa ,#e7e9ec);
     border-color: #adb1b8 #a2a6ac #8d9096;
@@ -38,7 +51,7 @@
   }
   
   .postButton:hover {
-    border-color: #a2a6ac #979aa1 #82858a;
+    border-color: 	#87CEFA 	#87CEFA 	#87CEFA;
   }
   
   .postButton:focus {

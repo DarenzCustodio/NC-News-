@@ -8,11 +8,10 @@ export default function CommentCard({comments, setComments}){
         return (
             <div key={index}>
                     <div className="commentCard">
-                        <h2>comments {index + 1}</h2>
+                        <h3>{comments.author}</h3>
                         <p>{comments.body}</p>
-                        <p> author: {comments.author}</p>
-                        <p>created at: {String(actualDate)}</p>
-                        <p>votes: {comments.votes}</p>
+                        <p>Created at: {String(actualDate)}</p>
+                        <p>Votes: {comments.votes}</p>
                     </div>
                 </div>
             )

@@ -30,12 +30,12 @@ export default function UpdateVotes({setVotesCount, votesCount}){
      if(err){return <p>Vote unsuccessful... Please try again!</p>}
      return (
         <>
-            <p>votes: {votesCount}</p>
+            <h3>Votes: {votesCount}</h3>
         <div className="voteButtonContainer">
-            <button className="voteButton" role="button" onClick={handleVotesClick}>👍🗞️</button>
+            <button className="voteButton" role="button" onClick={handleVotesClick}>vote 👍</button>
         </div>
         <div className="deleteButtonContainer">
-            <button className="deleteButton" role="button" onClick={handleDeleteVotesClick}>👎❌</button>
+            <button className="deleteButton" role="button" onClick={handleDeleteVotesClick}>vote 👎</button>
         </div>
         </>
      )

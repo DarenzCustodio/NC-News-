@@ -16,7 +16,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
-
 }
 
 .card{
@@ -43,10 +42,13 @@
 
 .card-content .topic{
     display: inline-block;
-    background-color: white;
+    background-color: black;
     width: 100px;
     text-align: center;
     font-weight: bold;
+    border-radius: 10px;
+    padding-top:0;
+    color: white;
 }
 
 .card-content .heading{

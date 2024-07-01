@@ -30,20 +30,20 @@ export default function PostComment({comments, setComments}){
     else{
     return (
         <>
-        <div>
-        <form>
+        <div className="postButtonContainer">
+        <form className="form">
             <label htmlFor="userComment"></label>
             <textarea 
             name="comments" 
-            placeholder='new comment here:' 
+            placeholder='Add comment:' 
             value={userComment}
             onChange={(event)=>{
                 setUserComment(event.target.value);
             }}></textarea>
         </form>
+        <div className="comment-button">
+            <button  onClick={handleSubmit} className="postButton" role="button">comment</button>
         </div>
-        <div className="postButtonContainer">
-            <button  onClick={handleSubmit} className="postButton" role="button">post</button>
         </div>
         </>
     )

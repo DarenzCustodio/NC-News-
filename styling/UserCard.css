@@ -1,8 +1,39 @@
 .userCardContainer{
-    border: white;
-    border-style: solid;
+    display: inline-block;
     align-items: center;
-    padding: 20px;
     margin-top: 2%;
+    text-align: center;
+    max-width: 200%;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
+.profile-image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.user{
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #ffffff; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: lightskyblue;
+    color: white;
+  }

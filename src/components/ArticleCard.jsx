@@ -12,7 +12,7 @@ export default function ArticleCard({articles}){
                         <div className='card'>
                         <img className="articleImage" src={article.article_img_url} alt="image of article"></img> 
                         <div className='card-content'>
-                            <p className='topic'>{article.topic}</p>
+                            <p className='topic'>{article.topic.toUpperCase()}</p>
                             <p className='heading'> {article.title}</p>
                             <p className='author'>by {article.author}</p>
                             <p>

@@ -28,13 +28,14 @@ export default function ArticleManager(){
     return (
         <>
         <div className='articleContainer'>
-        <p>article_id: {article.article.article_id}</p>
         <img src={article.article.article_img_url} alt="image of article"></img>
-        <p>author: {article.article.author}</p>
-        <p>comment count: {article.article.comment_count}</p>
-        <p>created_at: {String(actualDate)}</p>
-        <p>title: {article.article.title}</p>
-        <p>topic: {article.article.topic}</p>
+        <h3>Title: {article.article.title}</h3>
+        <p>Author: {article.article.author}</p>
+        <p>Topic: {article.article.topic}</p>
+        <p>Comment count: {article.article.comment_count}</p>
+        <p>Created at: {String(actualDate)}</p>
+        </div>
+        <div className='votesContainer'>
         <UpdateVotes votesCount= {votesCount} setVotesCount={setVotesCount}/>
         </div>
         </>
