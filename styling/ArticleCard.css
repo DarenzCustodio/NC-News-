@@ -11,6 +11,11 @@
 
 }
 
+.heading{
+    text-decoration: none;
+    color: black;
+}
+
 .cardContainer{
     display: flex;
     justify-content: center;
@@ -92,4 +97,3 @@ svg{
     word-spacing: 20%;
     margin-left: 5px;
 }
-

@@ -2,7 +2,7 @@ import '../../styling/UserCard.css'
 
 export default function UserCard({allUsers}){
     return (
-        <div style={{backgroundColor: "lightblue", width: "full"}}>
+        <div>
             {allUsers.users.map((user, index)=>{
                 return (
                     <div className="userCardContainer" key={index}>
